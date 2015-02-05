@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name = 'quantile',
-    version = '0.0.1',
+    version = '1.0',
     author = 'Matt T. Proud',
     author_email = 'matt.proud@gmail.com',
     description = ("Python Implementation of Graham Cormode and S. "
