@@ -11,6 +11,9 @@ or
 
 Example of how to use it:
 
+    import quantile
+
+
     data = [3, 5.2, 13, 4]
 
     invariants = [(0.50, 0.05), (0.90, 0.01), (0.99, 0.001)]
@@ -20,3 +23,6 @@ Example of how to use it:
     for i in estimator._invariants:
         q = i._quantile
         print("{0}: {1}".format(q, estimator.query(q)))
+
+    print("sum: {0}".format(estimator._sum))
+    print("count: {0}".format(estimator._observations))
