@@ -45,6 +45,7 @@ class Estimator(object):
         self._buffer = []
         self._head = None
         self._observations = 0
+        self._sum = 0
 
     def observe(self, value):
         """Samples an observation's value.
@@ -57,6 +58,7 @@ class Estimator(object):
             self._flush()
 
         self._observations += 1
+        self._sum += value
 
     def query(self, rank):
         """Retrieves the value estimate for the requested quantile rank.
