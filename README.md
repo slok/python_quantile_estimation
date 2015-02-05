@@ -15,7 +15,7 @@ Example of how to use it:
 
     invariants = [(0.50, 0.05), (0.90, 0.01), (0.99, 0.001)]
     estimator = quantile.Estimator(*invariants)
-    [estimator.observe(float(i)) for i in data2]
+    [estimator.observe(float(i)) for i in data]
 
     for i in estimator._invariants:
         q = i._quantile
